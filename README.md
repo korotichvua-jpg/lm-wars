@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚔️ LM-Wars
 
-## Getting Started
+**LM-Wars** is a local-first Language Model Benchmark and Arena Battleground. Designed to connect to your local **LM Studio** server, it enables live head-to-head model battles, automated multi-category benchmarking, real-time token throughput metrics (TPS & TTFT), and an interactive ELO leaderboard.
 
-First, run the development server:
+---
 
+## ✨ Features
+- 🥊 **Side-by-Side Arena Battles**: Stream responses from two local models (or different parameters/temperatures) concurrently.
+- ⚡ **Real-Time Telemetry**: Measure Time-to-First-Token (TTFT), tokens/sec (TPS), character count, and latency on every turn.
+- 🏆 **Dynamic ELO Leaderboard**: Community-standard ELO rating updates based on human voting or automated judging.
+- 🎯 **Automated Benchmark Suites**: Evaluate models across reasoning, coding, instruction adherence, and speed with reproducible rubrics.
+- 🔒 **100% Local & Private**: Direct connection to LM Studio (`http://127.0.0.1:1234/v1`). No cloud API keys or external data transmission required.
+
+---
+
+## 🚀 Quick Start
+
+### 1. Start LM Studio
+Ensure **LM Studio** is running with its local server enabled:
+- Port: `1234` (Default URL: `http://127.0.0.1:1234/v1`)
+- Load one or more models in LM Studio.
+
+### 2. Launch LM-Wars
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Install dependencies (if not already done)
+bun install
+
+# Start the development server
+bun run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📚 Documentation
+- [**Product Specification (`docs/SPEC.md`)**](docs/SPEC.md) — Personas, user stories, and acceptance criteria.
+- [**Architecture Blueprint (`docs/ARCHITECTURE.md`)**](docs/ARCHITECTURE.md) — System flow, data models, and protocols.
+- [**Roadmap & Tasks (`docs/ROADMAP.md`)**](docs/ROADMAP.md) — Phased execution tracking and feature backlog.
+- [**AI Guidelines (`AGENTS.md`)**](AGENTS.md) — Coding conventions and assistant rules.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠️ Tech Stack
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router, React 19)
+- **Runtime**: [Bun](https://bun.sh/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **LLM Interface**: OpenAI-compatible REST & Server-Sent Events (SSE)
