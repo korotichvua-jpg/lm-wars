@@ -1,0 +1,14 @@
+{
+  "model": "cerberus-v0.1",
+  "prompt": "what is total construction cost for building in texas 2 gigawath ai most advanced and secure data center (full expenses, investments, all materials, detailed econimic model in advanced top tier investment top tier firm form, all source prices, calculations in excel)",
+  "timestamp": 1791096313.6118894,
+  "load_time_sec": 29.29,
+  "ttft_sec": 5.996,
+  "gen_duration_sec": 1289.749,
+  "total_duration_sec": 1295.744,
+  "token_count": 965,
+  "char_count": 3964,
+  "tokens_per_sec": 0.75,
+  "success": true,
+  "error": null
+}

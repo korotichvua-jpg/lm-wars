@@ -1,0 +1,9 @@
+Model,Status,TTFT (s),Generation Time (s),Total Time (s),Tokens,Tokens/sec,Chars,Load Time (s),Error
+"cerberus-4b-v2-abliterated","SUCCESS",0.362,114.07,114.431,6449,56.54,18471,6.43,""
+"google/gemma-4-e4b","SUCCESS",1.033,320.642,321.675,2996,9.34,12252,13.93,""
+"deepseek-r1-distill-qwen-14b","SUCCESS",2.574,500.744,503.318,1722,3.44,7546,12.68,""
+"qwen2.5-coder-14b-instruct","SUCCESS",2.211,337.244,339.455,1068,3.17,4601,10.98,""
+"mistral-small-24b-instruct-2501","SUCCESS",2.375,1344.741,1347.116,1850,1.38,5434,17.98,""
+"qwen2.5-32b-instruct","SUCCESS",3.655,918.677,922.332,1051,1.14,4211,29.29,""
+"llama-3.3-70b-instruct","SUCCESS",5.722,1964.668,1970.39,1340,0.68,5007,29.29,""
+"cerberus-v0.1","SUCCESS",5.996,1289.749,1295.744,965,0.75,3964,29.29,""
